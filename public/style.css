@@ -1,0 +1,169 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.section_2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px 20px;
+    align-items: center;
+    align-content: center;
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+}
+/* loginform */
+#loginform{
+    padding: 10px;
+}
+#loginform input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid;
+    margin: 10px 0px;
+    padding: 10px;
+}
+#loginform input:focus,#loginform input:active,#loginform input:hover{
+    border: none;
+}
+#loginform label{
+    width: 90%;
+}
+#loginform button{
+    margin-top: 10px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+/* quizButton */
+#quizButton{
+    text-align: center;
+   
+}
+#quizButton button{
+    padding: 10px 20px;
+    border-radius: 50%;
+    /* width: 40%; */
+    height: 200px;
+    font-size: 30px;
+    color: #fff;
+    background-color: red;
+    border: 2px solid red;
+}
+.box-left {
+    text-align: center;
+}
+
+.box-left img {
+    width: 100%;
+    height: 100%;
+}
+
+.box-right {
+    /* width: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 60px 20px 20px auto; */
+    margin: auto;
+    border: 1px solid;
+    flex-wrap: wrap;
+    padding: 10px;
+    /* height: 100%; */
+    background-color: #fff;
+    border: 10px solid;
+}
+
+.boxHead {
+    border: 1px solid;
+    width: 100%;
+    padding: 10px;
+
+}
+
+.boxHead h4 {
+    padding: 0px 10px;
+}
+
+.boxBody {
+    border: 1px solid;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px 0px;
+}
+
+.boxBody li {
+    list-style: none;
+    padding: 10px;
+    background-color: lightgray;
+    border: 1px solid;
+    margin: 10px;
+}
+
+.boxFooter {
+    border: 1px solid;
+    display: flex;
+    width: 100%;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+}
+
+.boxFooter button {
+    padding: 5px 10px;
+}
+#resultBox{
+    border: black 10px solid;
+    padding: 30px;
+}
+#resultBox h1{
+    text-align: center;
+}
+#resultBox h3{
+    margin: 36px 0px;
+    text-transform: uppercase;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+.disabled {
+    pointer-events: none;
+}
+@media only screen and (max-width:500px) {
+    
+    .boxHead h4{
+        font-size: 20px;
+    }
+    #resultBox h1{
+        font-size: 30px;
+    }
+    #resultBox h3{
+        font-size: 16px;
+    }
+}
